@@ -1,32 +1,58 @@
-# Unit 7: Project 1
+# Project 1
 
-## Overview
-Welcome to Project 1! This is an important step in your full-stack journey as you will now use your newly acquired skills and knowledge to build web application from scratch. With your team, you will conceive and execute a design that solves a real-world problem by integrating data received from multiple server-side API requests. Because you will be working collaboratively, you will learn agile development methodologies and implement feature and bug fixes using the git branch workflow and pull requests.
+## Application Requirements
 
-## Key Topics
-* Server-side APIs
-* Git branching workflow
-* Agile software development
+* Must use at least two server-side APIs
 
-## Comprehension Check
-You will be employer-ready if you can answer the following questions:
-1. What is agile software development?
-2. What is an MVP?
-3. If you pull down a teammate's branch and you have merge conflicts, how do you handle it?
+* Must use a CSS framework (Bootstrap, Bulma, Materialize, etc... + Vanilla CSS)
 
-## Learning Objectives
-You will be employer-competitive if you are able to:
-* Speak technically about a feature you implemented in your project
-* Explain and execute git branching workflow in a collaborative project
-* Resolve merge conflicts
-* Explain agile software development
-* Design, build, and deploy a client-side web application using GitHub Pages
-* Prepare a professional presentation and repository README for your project
+* Must be interactive (i.e: accept and respond to user input) + local storage (if applicable)
 
-## Helpful Links
-* [Agile Methodology](https://en.wikipedia.org/wiki/Agile_software_development)
-* [Git Branching](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
-* [Learn Enough Git to Be Dangerous](https://www.learnenough.com/git-tutorial/getting_started)
+* Use at least one new third-party API (something we have not used in class)
 
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+* Must have a polished, mobile-friendly (responsive) UI (User-Interface)
+
+* Must meet good quality coding standards (indentation, scoping, naming, etc)
+
+* Does not use alerts, confirms or prompts (look into _modals_)
+
+* Must be deployed to GitHub Pages
+
+* All Team members should contribute!
+
+
+## Presentation Requirements
+
+Use this [project presentation template](https://docs.google.com/presentation/d/1_u8TKy5zW5UlrVQVnyDEZ0unGI2tjQPDEpA0FNuBKAw/edit?usp=sharing) to address the following: 
+
+* Elevator pitch: a one minute description of your application
+
+* Concept: What is your user story? What was your motivation for development?
+
+* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
+
+* Demo: Show your stuff!
+
+* Directions for Future Development: Which features would you add if you had more time? How can the application be better?
+
+* Links to the deployed application and the GitHub repository
+
+
+## Grading Metrics 
+
+| Metric        | Weight | 
+| ---           | ---    |
+| Concept       | 10%    |
+| Design        | 20%    |
+| Functionality | 30%    |
+| Collaboration | 30%    |
+| Presentation  | 10%    |
+
+
+## Submission on BCS
+
+You are required to submit the following:
+
+* The URL of the deployed application
+
+* The URL of the GitHub repository
