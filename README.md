@@ -38,6 +38,20 @@ Use this [project presentation template](https://docs.google.com/presentation/d/
 * Links to the deployed application and the GitHub repository
 
 ## Project Checklist:
+** Rough Breakdown of Tasks **
+
+- Front-end: Bootstrap, HTML, CSS, responsive, 
+- APIs: API keys, javascript, 1 API per person investigates how it works
+
+- Front-end:  Nori
+- Ticket Master: Cheryl
+- Open Weather API: Atif
+
+
+
+
+
+
 
 
 
