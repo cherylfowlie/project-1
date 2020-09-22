@@ -10,4 +10,17 @@ body {
   background-color: blue;
   height: 100px;
   color: white;
+  margin-bottom: 40px;
+}
+
+#subheader {
+  margin-bottom: 30px;
+}
+
+button {
+  height: 50px;
+}
+
+#clearButton {
+  margin-left: 10px;
 }
