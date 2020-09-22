@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  height: 100px;
+  color: white;
+}
