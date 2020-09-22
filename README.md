@@ -37,6 +37,9 @@ Use this [project presentation template](https://docs.google.com/presentation/d/
 
 * Links to the deployed application and the GitHub repository
 
+## Project Checklist:
+
+
 
 ## Grading Metrics 
 
