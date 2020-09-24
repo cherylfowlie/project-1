@@ -5,8 +5,8 @@ $("#submitButton").on("click", function (event) {
     var date = $("#dateInput").val()
     var keyword = $("#keywordInput").val()
     // Create a function for ticket master API
-    // + city + "startDateTime=" + date + "keywordInput=" + keyword 
-    var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?city=" + "&apikey=Gc8utzxGO1i0GSfZTsAAGFEf3xb5CDJT";
+    // + city + "startDateTime=" + date
+    var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?countryCode=AU&" + "keyword=" + keyword + "&apikey=Gc8utzxGO1i0GSfZTsAAGFEf3xb5CDJT";
     // var event = $(this).attr("data-event");
 
     $.ajax({
