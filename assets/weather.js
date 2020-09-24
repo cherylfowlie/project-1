@@ -4,16 +4,16 @@ $("#submitButton").on("click", function (e) {
     var city = $("#citySelect").children("option:selected").val()
     var date = $("#dateInput").val()
     var keywords = $("#keywordInput").val()
-    var apiKey = "406718fbed1888cdf91f422159a0c803";
+    var APIkey = "406718fbed1888cdf91f422159a0c803";
 
-    var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q={cityname}&appid={APIkey};"
+    var queryURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${APIkey}`;
 
 
     $.ajax({
         url: queryURL,
         method: "GET"
     }).then(function (response) {
-        $("#movie-view").text(JSON.stringify(response));
+        $("#weatherEl").text(JSON.stringify(response));
     });
 
 })
