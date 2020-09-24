@@ -1,5 +1,15 @@
 # Project 1
 
+
+## Project overview (breakoutroom 4)
+
+Project Description
+
+This project entails the usage of 2 APIs which will then assist the user to select the most appropriate event with the user-specified date, location and weather forecast.
+
+Details: https://github.com/cherylfowlie/project-1/projects/1
+
+
 ## Application Requirements
 
 * Must use at least two server-side APIs
