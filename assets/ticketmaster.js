@@ -1,12 +1,12 @@
 $("#submitButton").on("click", function (event) {
     event.preventDefault();
 
-    var city = $(this).attr("#citySelect");
-    var date = $(this).attr("#dateInput");
-    var keyword = $(this).attr("#keywordInput");
-
+    var city = $("#citySelect").children("option:selected").val()
+    var date = $("#dateInput").val()
+    var keyword = $("#keywordInput").val()
     // Create a function for ticket master API
-    var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?city=" + city + "startDateTime=" + date + "keywordInput=" + keyword + "&apikey=Gc8utzxGO1i0GSfZTsAAGFEf3xb5CDJT";
+    // + city + "startDateTime=" + date + "keywordInput=" + keyword 
+    var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?city=" + "&apikey=Gc8utzxGO1i0GSfZTsAAGFEf3xb5CDJT";
     // var event = $(this).attr("data-event");
 
     $.ajax({
@@ -17,7 +17,7 @@ $("#submitButton").on("click", function (event) {
     }).then(function (json) {
         //Add console Log for JSON Dump
         console.log(json);
-        $("#eventEl").text(JSON.stringify(response));
+        $("#eventEl").text(JSON.stringify(json));
         // Parse the response.
         // Do other things.
 
