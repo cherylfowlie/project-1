@@ -20,6 +20,16 @@ $("#submitButton").on("click", function (event) {
         $("#eventEl").text(JSON.stringify(response));
         // Parse the response.
         // Do other things.
+
+        // Storing the rating data
+        //Grab responce event name
+        var eventName = response.name;
+        // Create Div to display event names on the chosen date
+        var EventDiv = $("<div class='movie'>");
+        var pEvent = $("<p>").text("Event Name: " + eventName);
+
+        // Display List of Event Names
+        EventDiv.append(pEvent);
     });
 
 });
