@@ -1,8 +1,6 @@
 $("#submitButton").on("click", function (event) {
     event.preventDefault();
 
-    var city = $("#citySelect").children("option:selected").val()
-    var date = $("#dateInput").val()
     var keyword = $("#keywordInput").val()
     // Create a function for ticket master API
     // + city + "startDateTime=" + date
@@ -23,7 +21,7 @@ $("#submitButton").on("click", function (event) {
 
         // Storing the rating data
         //Grab responce event name
-        var eventName = response.name;
+        var eventName = json.name;
         // Create Div to display event names on the chosen date
         var EventDiv = $("<div class='movie'>");
         var pEvent = $("<p>").text("Event Name: " + eventName);
