@@ -33,3 +33,10 @@ $("#submitButton").on("click", function (event) {
     });
 
 });
+
+$("#clearButton").on("click", function (event) {
+
+    //Empty form on button click
+    event.preventDefault();
+    $("form").empty();
+});
