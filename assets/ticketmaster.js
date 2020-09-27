@@ -5,6 +5,8 @@ $("#submitButton").on("click", function (event) {
   var keyword = $("#keywordInput").val();
   var dayChoice = $("input[name=datePicker]:checked", ".form-group").val();
 
+  // turn the user choice to the variable
+
   if (dayChoice === "day1") {
     var date = moment().add(1, "days").format("YYYY-MM-D");
   } else if (dayChoice === "day2") {
@@ -16,8 +18,6 @@ $("#submitButton").on("click", function (event) {
   } else if (dayChoice === "day5") {
     var date = moment().add(5, "days").format("YYYY-MM-D");
   }
-
-  console.log(date);
 
   // Create a function for ticket master API
   // + city + "startDateTime=" + date
@@ -35,25 +35,36 @@ $("#submitButton").on("click", function (event) {
   $.ajax({
     type: "GET",
     url: queryURL,
-    async: true,
-    dataType: "json",
-  }).then(function (json) {
-    //Add console Log for JSON Dump
-    console.log(json);
-    //$("#eventEl").text(JSON.stringify(json));
-    // Parse the response.
-    // Do other things.
+  }).then(function (response) {
+    for (i = 0; i < 5; i++);
+    {
+      console.log(date);
+      console.log(response._embedded.events[i].dates.start.localDate);
 
-    // Storing the rating data
-    //Grab responce event name
-    var eventName = json.name;
-    // Create Div to display event names on the chosen date
-    var EventDiv = $("<div class='movie'>");
-    var pEvent = $("<p>").text("Event Name: " + eventName);
-
-    // Display List of Event Names
-    EventDiv.append(pEvent);
+      if (response._embedded.events[i].dates.start.localDate === date) {
+        var eventName = response._embedded.events[i].name;
+        console.log(eventName);
+        $("#eventEl").text(eventName);
+      } else {
+        $("#eventEl").text("No event found");
+      }
+    }
   });
+
+  //Add console Log for JSON Dump
+  //$("#eventEl").text(JSON.stringify(json));
+  // Parse the response.
+  // Do other things.
+
+  // Storing the rating data
+  //Grab responce event name
+  // var eventName = json.name;
+  // // Create Div to display event names on the chosen date
+  // var EventDiv = $("<div class='movie'>");
+  // var pEvent = $("<p>").text("Event Name: " + eventName);
+
+  // // Display List of Event Names
+  // EventDiv.append(pEvent);
 });
 
 $("#clearButton").on("click", function (event) {
