@@ -1,4 +1,5 @@
 body {
+  background-image: url("../img/image3.png");
   margin: 0;
   padding: 0;
 }
@@ -33,4 +34,8 @@ button {
 #weatherEl,
 #eventEl {
   background-color: rgb(190, 220, 232);
+}
+
+#upcomingEvent {
+  background-color: hotpink;
 }
