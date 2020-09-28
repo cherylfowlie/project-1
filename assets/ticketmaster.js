@@ -45,6 +45,12 @@ $("#submitButton").on("click", function (event) {
         var eventName = response._embedded.events[i].name;
         console.log(eventName);
         $("#eventEl").text(eventName);
+        var outdoorInd = response._embedded.events[i].classifications.segment.id;
+        console.log(outdoorInd);
+
+        if (weatherId < 800 && outdoorInd === "Music") {
+          $("#eventEl").append("This event maybe taking place outdoors. Please be aware it maybe subject to disruptions due to weather conditions");
+        }
       } else {
         $("#eventEl").text("No event found");
       }
