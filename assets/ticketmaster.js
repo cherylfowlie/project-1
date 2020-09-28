@@ -61,26 +61,11 @@ $("#submitButton").on("click", function (event) {
       } else {
         $("#eventEl").text("No event found on the day");
         $("#eventsHeading").text("Upcoming Events");
-        $("#event1").text(
-          response._embedded.events[0].name +
-            "Event Link " +
-            response._embedded.events[0].url
-        );
-        $("#event2").text(
-          response._embedded.events[1].name +
-            "Event Link " +
-            response._embedded.events[1].url
-        );
-        $("#event3").text(
-          response._embedded.events[2].name +
-            "Event Link " +
-            response._embedded.events[2].url
-        );
-        $("#event4").text(
-          response._embedded.events[3].name +
-            "Event Link " +
-            response._embedded.events[3].url
-        );
+
+        $("#event1").append('<a href=" ' + response._embedded.events[0].url + ' ">' + response._embedded.events[0].name + '</a>' + ' Date: ' + response._embedded.events[0].dates.start.localDate);
+        $("#event2").append('<a href=" ' + response._embedded.events[1].url + ' ">' + response._embedded.events[1].name + '</a>' + ' Date: ' + response._embedded.events[0].dates.start.localDate);
+        $("#event3").append('<a href=" ' + response._embedded.events[2].url + ' ">' + response._embedded.events[2].name + '</a>' + ' Date: ' + response._embedded.events[0].dates.start.localDate);
+        $("#event4").append('<a href=" ' + response._embedded.events[3].url + ' ">' + response._embedded.events[3].name + '</a>' + ' Date: ' + response._embedded.events[0].dates.start.localDate);
       }
     }
   });
