@@ -22,7 +22,7 @@ $("#submitButton").on("submit", function (event) {
   // Create a function for ticket master API
   // + city + "startDateTime=" + date
   var queryURL =
-    "https://app.ticketmaster.com/discovery/v2/events.json?" +
+    "https://app.ticketmaster.com/discovery/v2/events.json?&dma=701" +
     "keyword=" +
     keyword +
     "&apikey=Gc8utzxGO1i0GSfZTsAAGFEf3xb5CDJT" +
@@ -56,6 +56,11 @@ $("#submitButton").on("submit", function (event) {
         }
       } else {
         $("#eventEl").text("No event found");
+        $("#eventsHeading").text("Upcoming Events");
+        $("#event1").text(response._embedded.events[0].name + "Event Link " + response._embedded.events[0].url);
+        $("#event2").text(response._embedded.events[1].name + "Event Link " + response._embedded.events[1].url);
+        $("#event3").text(response._embedded.events[2].name + "Event Link " + response._embedded.events[2].url);
+        $("#event4").text(response._embedded.events[3].name + "Event Link " + response._embedded.events[3].url);
       }
     }
   });
