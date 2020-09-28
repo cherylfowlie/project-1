@@ -1,9 +1,13 @@
-$("#submitButton").on("submit", function (event) {
-  event.preventDefault();
-
+$("#submitButton").on("click", function (event) {
   var city = $("#citySelect").children("option:selected").val();
   var keyword = $("#keywordInput").val();
   var dayChoice = $("input[name=datePicker]:checked", ".form-group").val();
+
+  if (!dayChoice || !city) {
+    return;
+  }
+
+  event.preventDefault();
 
   // turn the user choice to the variable
 
@@ -55,12 +59,28 @@ $("#submitButton").on("submit", function (event) {
           );
         }
       } else {
-        $("#eventEl").text("No event found");
+        $("#eventEl").text("No event found on the day");
         $("#eventsHeading").text("Upcoming Events");
-        $("#event1").text(response._embedded.events[0].name + "Event Link " + response._embedded.events[0].url);
-        $("#event2").text(response._embedded.events[1].name + "Event Link " + response._embedded.events[1].url);
-        $("#event3").text(response._embedded.events[2].name + "Event Link " + response._embedded.events[2].url);
-        $("#event4").text(response._embedded.events[3].name + "Event Link " + response._embedded.events[3].url);
+        $("#event1").text(
+          response._embedded.events[0].name +
+            "Event Link " +
+            response._embedded.events[0].url
+        );
+        $("#event2").text(
+          response._embedded.events[1].name +
+            "Event Link " +
+            response._embedded.events[1].url
+        );
+        $("#event3").text(
+          response._embedded.events[2].name +
+            "Event Link " +
+            response._embedded.events[2].url
+        );
+        $("#event4").text(
+          response._embedded.events[3].name +
+            "Event Link " +
+            response._embedded.events[3].url
+        );
       }
     }
   });
