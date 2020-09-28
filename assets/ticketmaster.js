@@ -1,4 +1,4 @@
-$("#submitButton").on("click", function (event) {
+$("#submitButton").on("submit", function (event) {
   event.preventDefault();
 
   var city = $("#citySelect").children("option:selected").val();
