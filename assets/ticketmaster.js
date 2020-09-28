@@ -91,3 +91,10 @@ $("#clearButton").on("click", function (event) {
   event.preventDefault();
   $("#resultsDivId").addClass("resultsDiv");
 });
+
+// randomly generate background - not working yet
+// var images = ["image1.png", "image2.png", "image3.png"];
+// $("html").css({
+//   "background-image":
+//     "url(../img/" + images[Math.floor(Math.random() * images.length)] + ")",
+// });
