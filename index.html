@@ -15,43 +15,42 @@
   <h1 id="heading">What should I do on this Day?</h1>
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-6 jumbotron">
+      <div class="col-sm-12 col-lg-6 jumbotron">
         <form>
           <h3 id="subheader">Please enter your Request:</h3>
           <!-- date -->
           <div class="form-group">
             <label for="city">Pick the Date:</label>
 
-
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="datePicker" value="day1">
+              <input class="form-check-input" type="radio" name="datePicker" value="day1" required="required" />
               <label class="form-check-label" for="defaultCheck1" id="day1Button">
               </label>
             </div>
 
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="datePicker" value="day2">
+              <input class="form-check-input" type="radio" name="datePicker" value="day2" required="required" />
               <label class="form-check-label" for="defaultCheck1" id="day2Button">
 
               </label>
             </div>
 
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="datePicker" value="day3">
+              <input class="form-check-input" type="radio" name="datePicker" value="day3" required="required" />
               <label class="form-check-label" for="defaultCheck1" id="day3Button">
 
               </label>
             </div>
 
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="datePicker" value="day4">
+              <input class="form-check-input" type="radio" name="datePicker" value="day4" required="required" />
               <label class="form-check-label" id="day4Button" id="day3Button">
 
               </label>
             </div>
 
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="datePicker" value="day5">
+              <input class="form-check-input" type="radio" name="datePicker" value="day5" required="required" />
               <label class="form-check-label" for="defaultCheck1" id="day5Button">
 
               </label>
@@ -80,12 +79,14 @@
           </div>
 
           <!-- buttons-->
+          <div class="buttonDiv justify-content-center">
           <button type="submit" class="btn btn-primary" id="submitButton">
             Search
           </button>
           <button type="submit" class="btn btn-danger" id="clearButton">
             Clear Results
           </button>
+        </div>
         </form>
       </div>
     </div>
