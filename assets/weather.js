@@ -40,9 +40,14 @@ $("#submitButton").on("click", function (e) {
         return item.dt_txt === day1Text;
       });
       var weatherId = day1Weather.weather[0].id;
+      var icon_id = day1Weather.weather[0].icon
+      var icon_url = "http://openweathermap.org/img/wn/" + icon_id + ".png";
+      var img = $("<img>");
+      img.attr("src", icon_url);
       $("#weatherEl").text(
         "The weather on " + day1 + " is: " + day1Weather.weather[0].description
       );
+      $("#weatherEl").append(img);
     } else if (dayChoice === "day2") {
       var day2Text = moment().add(2, "days").format("YYYY-MM-DD") + " 09:00:00";
       var day2Weather = response.list.find(function (item) {
@@ -50,24 +55,38 @@ $("#submitButton").on("click", function (e) {
       });
 
       var weatherId = day2Weather.weather[0].id;
+      var icon_id = day2Weather.weather[0].icon
+      var icon_url = "http://openweathermap.org/img/wn/" + icon_id + ".png";
+      var img = $("<img>");
+      img.attr("src", icon_url);
       $("#weatherEl").text(
         "The weather on " + day2 + " is: " + day2Weather.weather[0].description
       );
+      $("#weatherEl").append(img);
     } else if (dayChoice === "day3") {
       var day3Text = moment().add(3, "days").format("YYYY-MM-DD") + " 09:00:00";
       var day3Weather = response.list.find(function (item) {
         return item.dt_txt === day3Text;
       });
       var weatherId = day3Weather.weather[0].id;
+      var icon_id = day3Weather.weather[0].icon
+      var icon_url = "http://openweathermap.org/img/wn/" + icon_id + ".png";
+      var img = $("<img>");
+      img.attr("src", icon_url);
       $("#weatherEl").text(
         "The weather on " + day3 + " is: " + day3Weather.weather[0].description
       );
+      $("#weatherEl").append(img);
     } else if (dayChoice === "day4") {
       var day4Text = moment().add(4, "days").format("YYYY-MM-DD") + " 09:00:00";
       var day4Weather = response.list.find(function (item) {
         return item.dt_txt === day4Text;
       });
       var weatherId = day4Weather.weather[0].id;
+      var icon_id = day4Weather.weather[0].icon
+      var icon_url = "http://openweathermap.org/img/wn/" + icon_id + ".png";
+      var img = $("<img>");
+      img.attr("src", icon_url);
       $("#weatherEl").text(
         "The weather on " + day4 + " is: " + day4Weather.weather[0].description
       );
@@ -77,9 +96,14 @@ $("#submitButton").on("click", function (e) {
         return item.dt_txt === day5Text;
       });
       var weatherId = day5Weather.weather[0].id;
+      var icon_id = day51Weather.weather[0].icon
+      var icon_url = "http://openweathermap.org/img/wn/" + icon_id + ".png";
+      var img = $("<img>");
+      img.attr("src", icon_url);
       $("#weatherEl").text(
         "The weather on " + day5 + " is: " + day5Weather.weather[0].description
       );
+      $("#weatherEl").append(img);
     }
   });
 });
