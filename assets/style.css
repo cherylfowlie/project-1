@@ -24,3 +24,7 @@ button {
 #clearButton {
   margin-left: 10px;
 }
+
+.resultsDiv {
+  display: none;
+}
