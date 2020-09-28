@@ -40,7 +40,7 @@ $("#submitButton").on("click", function (e) {
         return item.dt_txt === day1Text;
       });
       var weatherId = day1Weather.weather[0].id;
-      var icon_id = day1Weather.weather[0].icon
+      var icon_id = day1Weather.weather[0].icon;
       var icon_url = "http://openweathermap.org/img/wn/" + icon_id + ".png";
       var img = $("<img>");
       img.attr("src", icon_url);
@@ -55,7 +55,7 @@ $("#submitButton").on("click", function (e) {
       });
 
       var weatherId = day2Weather.weather[0].id;
-      var icon_id = day2Weather.weather[0].icon
+      var icon_id = day2Weather.weather[0].icon;
       var icon_url = "http://openweathermap.org/img/wn/" + icon_id + ".png";
       var img = $("<img>");
       img.attr("src", icon_url);
@@ -69,7 +69,7 @@ $("#submitButton").on("click", function (e) {
         return item.dt_txt === day3Text;
       });
       var weatherId = day3Weather.weather[0].id;
-      var icon_id = day3Weather.weather[0].icon
+      var icon_id = day3Weather.weather[0].icon;
       var icon_url = "http://openweathermap.org/img/wn/" + icon_id + ".png";
       var img = $("<img>");
       img.attr("src", icon_url);
@@ -83,20 +83,21 @@ $("#submitButton").on("click", function (e) {
         return item.dt_txt === day4Text;
       });
       var weatherId = day4Weather.weather[0].id;
-      var icon_id = day4Weather.weather[0].icon
+      var icon_id = day4Weather.weather[0].icon;
       var icon_url = "http://openweathermap.org/img/wn/" + icon_id + ".png";
       var img = $("<img>");
       img.attr("src", icon_url);
       $("#weatherEl").text(
         "The weather on " + day4 + " is: " + day4Weather.weather[0].description
       );
+      $("#weatherEl").append(img);
     } else if (dayChoice === "day5") {
       var day5Text = moment().add(5, "days").format("YYYY-MM-DD") + " 09:00:00";
       var day5Weather = response.list.find(function (item) {
         return item.dt_txt === day5Text;
       });
       var weatherId = day5Weather.weather[0].id;
-      var icon_id = day51Weather.weather[0].icon
+      var icon_id = day5Weather.weather[0].icon;
       var icon_url = "http://openweathermap.org/img/wn/" + icon_id + ".png";
       var img = $("<img>");
       img.attr("src", icon_url);
