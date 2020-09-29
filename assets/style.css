@@ -8,7 +8,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: blue;
+  background-color: #7d9cd6;
   height: 100px;
   color: white;
   margin-bottom: 40px;
@@ -17,6 +17,10 @@ body {
 
 #subheader {
   margin-bottom: 30px;
+}
+
+.mainBox {
+  background-color: #92d7de;
 }
 
 button {
@@ -33,9 +37,9 @@ button {
 
 #weatherEl,
 #eventEl {
-  background-color: rgb(190, 220, 232);
+  background-color: #8dc7a9;
 }
 
 #upcomingEvent {
-  background-color: hotpink;
+  background-color: #9ede92;
 }
