@@ -101,21 +101,6 @@ $("#submitButton").on("click", function (event) {
       }
     }
   });
-
-  //Add console Log for JSON Dump
-  //$("#eventEl").text(JSON.stringify(json));
-  // Parse the response.
-  // Do other things.
-
-  // Storing the rating data
-  //Grab responce event name
-  // var eventName = json.name;
-  // // Create Div to display event names on the chosen date
-  // var EventDiv = $("<div class='movie'>");
-  // var pEvent = $("<p>").text("Event Name: " + eventName);
-
-  // // Display List of Event Names
-  // EventDiv.append(pEvent);
 });
 
 $("#clearButton").on("click", function (event) {
