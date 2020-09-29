@@ -63,27 +63,12 @@ $("#submitButton").on("click", function (event) {
         $("#eventsHeading").text("Upcoming Events");
 
         $("#event1").append('<a href=" ' + response._embedded.events[0].url + ' ">' + response._embedded.events[0].name + '</a>' + ' Date: ' + response._embedded.events[0].dates.start.localDate);
-        $("#event2").append('<a href=" ' + response._embedded.events[1].url + ' ">' + response._embedded.events[1].name + '</a>' + ' Date: ' + response._embedded.events[0].dates.start.localDate);
-        $("#event3").append('<a href=" ' + response._embedded.events[2].url + ' ">' + response._embedded.events[2].name + '</a>' + ' Date: ' + response._embedded.events[0].dates.start.localDate);
-        $("#event4").append('<a href=" ' + response._embedded.events[3].url + ' ">' + response._embedded.events[3].name + '</a>' + ' Date: ' + response._embedded.events[0].dates.start.localDate);
+        $("#event2").append('<a href=" ' + response._embedded.events[1].url + ' ">' + response._embedded.events[1].name + '</a>' + ' Date: ' + response._embedded.events[1].dates.start.localDate);
+        $("#event3").append('<a href=" ' + response._embedded.events[2].url + ' ">' + response._embedded.events[2].name + '</a>' + ' Date: ' + response._embedded.events[2].dates.start.localDate);
+        $("#event4").append('<a href=" ' + response._embedded.events[3].url + ' ">' + response._embedded.events[3].name + '</a>' + ' Date: ' + response._embedded.events[3].dates.start.localDate);
       }
     }
   });
-
-  //Add console Log for JSON Dump
-  //$("#eventEl").text(JSON.stringify(json));
-  // Parse the response.
-  // Do other things.
-
-  // Storing the rating data
-  //Grab responce event name
-  // var eventName = json.name;
-  // // Create Div to display event names on the chosen date
-  // var EventDiv = $("<div class='movie'>");
-  // var pEvent = $("<p>").text("Event Name: " + eventName);
-
-  // // Display List of Event Names
-  // EventDiv.append(pEvent);
 });
 
 $("#clearButton").on("click", function (event) {
