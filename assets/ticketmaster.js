@@ -1,4 +1,8 @@
 $("#submitButton").on("click", function (event) {
+  $("#event1").empty();
+  $("#event2").empty();
+  $("#event3").empty();
+  $("#event4").empty();
   var city = $("#citySelect").children("option:selected").val();
   var keyword = $("#keywordInput").val();
   var dayChoice = $("input[name=datePicker]:checked", ".form-group").val();
