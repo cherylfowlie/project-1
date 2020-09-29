@@ -56,3 +56,8 @@ button {
 a {
   color: black;
 }
+
+.warning {
+  font-style: italic;
+  background: yellow;
+}

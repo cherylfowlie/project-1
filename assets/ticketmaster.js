@@ -1,4 +1,4 @@
-$("#submitButton").on("click", function (event) {
+function getEvents() {
   $("#event1").empty();
   $("#event2").empty();
   $("#event3").empty();
@@ -10,8 +10,6 @@ $("#submitButton").on("click", function (event) {
   if (!dayChoice || !city) {
     return;
   }
-
-  event.preventDefault();
 
   // turn the user choice to the variable
 
@@ -52,14 +50,17 @@ $("#submitButton").on("click", function (event) {
       if (response._embedded.events[i].dates.start.localDate === date) {
         var eventName = response._embedded.events[i].name;
         console.log(eventName);
-        $("#eventEl").text(eventName);
-        var outdoorInd =
-          response._embedded.events[i].classifications.segment.id;
-        console.log(outdoorInd);
-
-        if (weatherId < 800 && outdoorInd === "Music") {
+        $("#eventEl").html(
+          '<a href="' +
+            response._embedded.events[i].url +
+            ' ">' +
+            eventName +
+            "</a>"
+        );
+        $("#upcomingEvent").hide();
+        if (weatherId < 800) {
           $("#eventEl").append(
-            "This event maybe taking place outdoors. Please be aware it maybe subject to disruptions due to weather conditions"
+            "<p class='warning'>If your event is going to be outdoors, please be aware that it maybe subject to disruptions due to weather conditions</p>"
           );
         }
       } else {
@@ -68,54 +69,47 @@ $("#submitButton").on("click", function (event) {
 
         $("#event1").append(
           '<a href=" ' +
-          response._embedded.events[0].url +
-          ' ">' +
-          response._embedded.events[0].name +
-          "</a>" +
-          " Date: " +
-          response._embedded.events[0].dates.start.localDate
+            response._embedded.events[0].url +
+            ' ">' +
+            response._embedded.events[0].name +
+            "</a>" +
+            " Date: " +
+            response._embedded.events[0].dates.start.localDate
         );
         $("#event2").append(
           '<a href=" ' +
-          response._embedded.events[1].url +
-          ' ">' +
-          response._embedded.events[1].name +
-          "</a>" +
-          " Date: " +
-          response._embedded.events[1].dates.start.localDate
+            response._embedded.events[1].url +
+            ' ">' +
+            response._embedded.events[1].name +
+            "</a>" +
+            " Date: " +
+            response._embedded.events[1].dates.start.localDate
         );
         $("#event3").append(
           '<a href=" ' +
-          response._embedded.events[2].url +
-          ' ">' +
-          response._embedded.events[2].name +
-          "</a>" +
-          " Date: " +
-          response._embedded.events[2].dates.start.localDate
+            response._embedded.events[2].url +
+            ' ">' +
+            response._embedded.events[2].name +
+            "</a>" +
+            " Date: " +
+            response._embedded.events[2].dates.start.localDate
         );
         $("#event4").append(
           '<a href=" ' +
-          response._embedded.events[3].url +
-          ' ">' +
-          response._embedded.events[3].name +
-          "</a>" +
-          " Date: " +
-          response._embedded.events[3].dates.start.localDate
+            response._embedded.events[3].url +
+            ' ">' +
+            response._embedded.events[3].name +
+            "</a>" +
+            " Date: " +
+            response._embedded.events[3].dates.start.localDate
         );
       }
     }
   });
-});
+}
 
 $("#clearButton").on("click", function (event) {
   //Empty form on button click
   event.preventDefault();
   $("#resultsDivId").addClass("resultsDiv");
 });
-
-// randomly generate background - not working yet
-// var images = ["image1.png", "image2.png", "image3.png"];
-// $("html").css({
-//   "background-image":
-//     "url(../img/" + images[Math.floor(Math.random() * images.length)] + ")",
-// });

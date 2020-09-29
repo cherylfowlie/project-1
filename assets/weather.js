@@ -108,5 +108,6 @@ $("#submitButton").on("click", function (e) {
       );
       $("#weatherEl").append(img);
     }
+    getEvents();
   });
 });
