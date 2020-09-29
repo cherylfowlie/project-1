@@ -64,39 +64,39 @@ $("#submitButton").on("click", function (event) {
 
         $("#event1").append(
           '<a href=" ' +
-            response._embedded.events[0].url +
-            ' ">' +
-            response._embedded.events[0].name +
-            "</a>" +
-            " Date: " +
-            response._embedded.events[0].dates.start.localDate
+          response._embedded.events[0].url +
+          ' ">' +
+          response._embedded.events[0].name +
+          "</a>" +
+          " Date: " +
+          response._embedded.events[0].dates.start.localDate
         );
         $("#event2").append(
           '<a href=" ' +
-            response._embedded.events[1].url +
-            ' ">' +
-            response._embedded.events[1].name +
-            "</a>" +
-            " Date: " +
-            response._embedded.events[0].dates.start.localDate
+          response._embedded.events[1].url +
+          ' ">' +
+          response._embedded.events[1].name +
+          "</a>" +
+          " Date: " +
+          response._embedded.events[1].dates.start.localDate
         );
         $("#event3").append(
           '<a href=" ' +
-            response._embedded.events[2].url +
-            ' ">' +
-            response._embedded.events[2].name +
-            "</a>" +
-            " Date: " +
-            response._embedded.events[0].dates.start.localDate
+          response._embedded.events[2].url +
+          ' ">' +
+          response._embedded.events[2].name +
+          "</a>" +
+          " Date: " +
+          response._embedded.events[2].dates.start.localDate
         );
         $("#event4").append(
           '<a href=" ' +
-            response._embedded.events[3].url +
-            ' ">' +
-            response._embedded.events[3].name +
-            "</a>" +
-            " Date: " +
-            response._embedded.events[0].dates.start.localDate
+          response._embedded.events[3].url +
+          ' ">' +
+          response._embedded.events[3].name +
+          "</a>" +
+          " Date: " +
+          response._embedded.events[3].dates.start.localDate
         );
       }
     }
