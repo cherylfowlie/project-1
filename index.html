@@ -13,13 +13,13 @@
 
 <body>
   <h1 id="heading">What should I do on this Day?</h1>
-  <div class="container">
+  <main class="container">
     <div class="row justify-content-center">
       <div class="col-sm-12 col-lg-6 jumbotron mainBox">
         <form>
           <h3 id="subheader">Please enter your Request:</h3>
           <!-- date -->
-          <div class="form-group">
+          <section class="form-group">
             <label for="city">Pick the Date:</label>
 
             <div class="form-check">
@@ -31,84 +31,79 @@
             <div class="form-check">
               <input class="form-check-input" type="radio" name="datePicker" value="day2" required="required" />
               <label class="form-check-label" for="defaultCheck1" id="day2Button">
-
               </label>
             </div>
-
             <div class="form-check">
               <input class="form-check-input" type="radio" name="datePicker" value="day3" required="required" />
               <label class="form-check-label" for="defaultCheck1" id="day3Button">
-
               </label>
             </div>
-
             <div class="form-check">
               <input class="form-check-input" type="radio" name="datePicker" value="day4" required="required" />
               <label class="form-check-label" id="day4Button" id="day3Button">
-
               </label>
             </div>
-
             <div class="form-check">
               <input class="form-check-input" type="radio" name="datePicker" value="day5" required="required" />
               <label class="form-check-label" for="defaultCheck1" id="day5Button">
-
               </label>
             </div>
-
-          </div>
+          </section>
 
           <!-- location by city -->
-          <div class="form-group">
+          <section class="form-group">
             <label for="city">Pick the City:</label>
             <select class="form-control" id="citySelect">
-              <option id="Sydney">Sydney</option>
-              <option> Melbourne</option>
+              <option>Sydney</option>
+              <option>Melbourne</option>
               <option>Brisbane</option>
               <option>Adelaide</option>
               <option>Perth</option>
               <option>Canberra</option>
             </select>
-          </div>
+          </section>
 
           <!-- keyword -->
-          <div class="form-group">
+          <section class="form-group">
             <label for="keywords">Please enter your keywords:</label>
             <textarea class="form-control" id="keywordInput" rows="3"
               placeholder="Please separate your keywords by a comma[ , ]. For example: art, France, 18th century."></textarea>
-          </div>
+          </section>
 
           <!-- buttons-->
-          <div class="buttonDiv justify-content-center">
+          <section class="buttonDiv justify-content-center">
             <button type="submit" class="btn btn-primary" id="submitButton">
               Search
             </button>
             <button type="submit" class="btn btn-danger" id="clearButton">
               Clear Results
             </button>
-          </div>
+          </section>
         </form>
       </div>
     </div>
 
+    <!-- weather results-->
     <div class="row resultsDiv" id="resultsDivId">
-      <div id="weatherEl" class="col-12 jumbotron">
+      <section id="weatherEl" class="col-12 jumbotron">
 
-      </div>
+      </section>
 
-
-      <div id="eventEl" class="col-12 jumbotron">
-      </div>
-      <div id="upcomingEvent" class="col-12 jumbotron">
+    <!-- event results-->
+      <section id="eventEl" class="col-12 jumbotron">
+      </section>
+    
+    <!-- if no results, show upcoming events -->
+      <section id="upcomingEvent" class="col-12 jumbotron">
         <h2 id="eventsHeading"> </h2>
         <p id="event1"></p>
         <p id="event2"></p>
         <p id="event3"></p>
         <p id="event4"></p>
-      </div>
+      </section>
 
     </div>
-  </div>
+  </main>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
