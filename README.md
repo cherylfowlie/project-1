@@ -5,81 +5,35 @@
 
 Project Description
 
-This project entails the usage of 2 APIs which will then assist the user to select the most appropriate event with the user-specified date, location and weather forecast.
-
-Details: https://github.com/cherylfowlie/project-1/projects/1
+This project entails the usage of 2 APIs which will then assist the user to select the most appropriate event with the user-specified date and location with weather forecast.This application is mobile responsive and has accessibility features included.
 
 
-## Application Requirements
+## Deployment
 
-* Must use at least two server-side APIs
-
-* Must use a CSS framework (Bootstrap, Bulma, Materialize, etc... + Vanilla CSS)
-
-* Must be interactive (i.e: accept and respond to user input) + local storage (if applicable)
-
-* Use at least one new third-party API (something we have not used in class)
-
-* Must have a polished, mobile-friendly (responsive) UI (User-Interface)
-
-* Must meet good quality coding standards (indentation, scoping, naming, etc)
-
-* Does not use alerts, confirms or prompts (look into _modals_)
-
-* Must be deployed to GitHub Pages
-
-* All Team members should contribute!
+https://cherylfowlie.github.io/project-1/
 
 
-## Presentation Requirements
+## Tech Used
 
-Use this [project presentation template](https://docs.google.com/presentation/d/1_u8TKy5zW5UlrVQVnyDEZ0unGI2tjQPDEpA0FNuBKAw/edit?usp=sharing) to address the following: 
+- HTML5
+- CSS3
+- jQuery
+- JavaScript
+- Moment.js
+- Bootstrap 4
+- APIs (OpenWeatherAPI and TicketMaster)
 
-* Elevator pitch: a one minute description of your application
+## Screenshots 
 
-* Concept: What is your user story? What was your motivation for development?
+Screenshot 1) User is given the simple UI to input the date, city and prefered keywords for event search.
+![](image1.png)
 
-* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
+Screenshot 2) the result displays the weather on that day and events. If no events, it displays the future events.
+![](image2.png)
 
-* Demo: Show your stuff!
+Screenshot 3) if there is an event on the day and the weather is bad, it pops a warning message. 
+![](image3.png)
 
-* Directions for Future Development: Which features would you add if you had more time? How can the application be better?
+## Contact
+Noriyuki Ishii: https://www.linkedin.com/in/ishiinoriyuki/
 
-* Links to the deployed application and the GitHub repository
-
-## Project Checklist:
-** Rough Breakdown of Tasks **
-
-- Front-end: Bootstrap, HTML, CSS, responsive, 
-- APIs: API keys, javascript, 1 API per person investigates how it works
-
-- Front-end:  Nori
-- Ticket Master: Cheryl
-- Open Weather API: Atif
-
-
-
-
-
-
-
-
-
-## Grading Metrics 
-
-| Metric        | Weight | 
-| ---           | ---    |
-| Concept       | 10%    |
-| Design        | 20%    |
-| Functionality | 30%    |
-| Collaboration | 30%    |
-| Presentation  | 10%    |
-
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository
