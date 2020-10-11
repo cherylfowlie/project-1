@@ -36,4 +36,5 @@ Screenshot 3) if there is an event on the day and the weather is bad, it pops a 
 
 ## Contact
 Noriyuki Ishii: https://www.linkedin.com/in/ishiinoriyuki/
+Atif Haque: https://www.linkedin.com/in/atif-haque-2064bb11b/
 
